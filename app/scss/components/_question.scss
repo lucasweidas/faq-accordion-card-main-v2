@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+.question {
+  border-block-end: rem(1) solid var(--color-grayish-blue-1);
+
+  &__dropdown {
+    --dropdown-height: 0px;
+    height: var(--dropdown-height);
+    overflow: hidden;
+    transition: height var(--duration) ease-in-out;
+
+    .dropdown__content {
+      padding-block-end: rem(18);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+:root {
+  --duration: 200ms;
+}
+
+body {
+  background: var(--linear-gradient) no-repeat fixed;
+}

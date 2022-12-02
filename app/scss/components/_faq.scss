@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+.faq {
+  --faq-max-width: #{rem(350)};
+  width: min(100%, var(--faq-max-width));
+
+  @include breakpoint(medium) {
+    @include breakpoint-down(large) {
+      --faq-max-width: #{rem(400)};
+    }
+  }
+}

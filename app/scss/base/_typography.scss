@@ -1,0 +1,37 @@
+@use '../abstracts/' as *;
+
+:root {
+  --font-kumbh-sans: 'Kumbh Sans', sans-serif;
+  --font-size-1: #{rem(13)};
+  --font-size-2: #{rem(14)};
+  --font-size-4: #{rem(32)};
+
+  @include breakpoint(medium) {
+    --font-size-1: #{rem(15)};
+    --font-size-2: #{rem(16)};
+    --font-size-4: #{rem(36)};
+  }
+}
+
+body {
+  font-family: var(--font-kumbh-sans);
+}
+
+.headline-1 {
+  margin-block-end: rem(24);
+  font-size: var(--font-size-4);
+  font-weight: 700;
+  color: var(--color-dark-blue);
+  text-align: center;
+
+  @include breakpoint(large) {
+    text-align: start;
+  }
+}
+
+.text {
+  font-size: var(--font-size-1);
+  font-weight: 400;
+  color: var(--color-grayish-blue-4);
+  line-height: 1.6;
+}

@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.main {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: rem(148) rem(84);
+
+  @include breakpoint(medium) {
+    padding-block-start: rem(170);
+  }
+
+  @include breakpoint(large) {
+    padding-block: rem(84);
+  }
+}

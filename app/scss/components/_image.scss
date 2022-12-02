@@ -1,0 +1,43 @@
+@use '../abstracts/' as *;
+
+.image {
+  --image-max-width: #{rem(236)};
+  width: min(100% - rem(24) * 2, var(--image-max-width));
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include breakpoint(medium) {
+    --image-max-width: #{rem(280)};
+  }
+
+  @include breakpoint(large) {
+    width: rem(388);
+    height: rem(359);
+    position: relative;
+    inset: auto;
+    background: url('../images/illustration-woman-online-desktop.svg') top right / rem(472) auto no-repeat;
+    transform: none;
+  }
+
+  &::before {
+    @include breakpoint-down(large) {
+      content: url('../images/illustration-woman-online-mobile.svg');
+      width: 100%;
+      display: block;
+      position: absolute;
+      transform: translateY(-59%);
+    }
+  }
+
+  &__box {
+    position: absolute;
+    left: rem(-93);
+    top: 38%;
+
+    @include breakpoint-down(large) {
+      display: none;
+    }
+  }
+}

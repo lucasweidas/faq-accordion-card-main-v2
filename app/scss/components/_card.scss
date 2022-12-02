@@ -1,0 +1,36 @@
+@use '../abstracts/' as *;
+
+.card {
+  --card-max-width: #{rem(450)};
+  --card-background-max-width: #{rem(240)};
+  --card-padding-inline: #{rem(24)};
+  width: min(100% - var(--card-padding-inline) * 2, var(--card-max-width));
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: min(40vw, rem(136)) var(--card-padding-inline) rem(48);
+  background: url('../images/bg-pattern-mobile.svg') top center / min(100% - var(--card-padding-inline) * 2, var(--card-background-max-width)) auto no-repeat;
+  background-color: var(--color-white);
+  border-radius: rem(24);
+
+  @include breakpoint-down(xsmall) {
+    --card-padding-inline: #{rem(18)};
+    padding-block-end: rem(40);
+  }
+
+  @include breakpoint(medium) {
+    --card-max-width: #{rem(500)};
+    --card-background-max-width: #{rem(284)};
+    padding-block: rem(160) rem(52);
+  }
+
+  @include breakpoint(large) {
+    --card-max-width: #{rem(920)};
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(70) rem(94) rem(80) 0;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-size: auto;
+    background-position: top 68% left rem(-576);
+  }
+}
