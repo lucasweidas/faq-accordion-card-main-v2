@@ -23,8 +23,8 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [github.com/lucasweidas/faq-accordion-card-main](https://github.com/lucasweidas/faq-accordion-card-main)
-- Live Site URL: [lucasweidas.github.io/faq-accordion-card-main/](https://lucasweidas.github.io/faq-accordion-card-main/)
+- Solution URL: [github.com/lucasweidas/faq-accordion-card-main](https://github.com/lucasweidas/faq-accordion-card-main-v2)
+- Live Site URL: [lucasweidas.github.io/faq-accordion-card-main/](https://lucasweidas.github.io/faq-accordion-card-main-v2/)
 
 ## My process
 
